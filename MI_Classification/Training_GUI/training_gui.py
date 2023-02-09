@@ -23,7 +23,8 @@ class TrainingScreen:
         self.generate_image()
         self.image_container = self.canvas.create_image(250, 250, image=self.photo)
         self.next_button = Button(
-            text="Show next Nuclei",
+            # text="Show next Nuclei",
+            text="Show next Cell",
             font=("arial", 20, "italic"),
             fg=BACKGROUND_COLOR,
             bg='white',

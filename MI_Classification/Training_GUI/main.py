@@ -2,14 +2,13 @@ from omero_images import OmeroImages
 from training_gui import TrainingScreen, count
 import matplotlib.pyplot as plt
 
-image_id = 247869
-timepoints = [3, 10, 15, 20]
-nuclei_per_img = 3
+plate_id = 9674
+nuclei_per_img = 100
 
+imgs = OmeroImages(plate_id, nuclei_per_img)
 
-imgs = OmeroImages(image_id, timepoints, nuclei_per_img)
-screen = TrainingScreen(imgs)
-print(count)
+screen = TrainingScreen(imgs).astype(dtype='Int64')
+# print(count)
 
 
 
